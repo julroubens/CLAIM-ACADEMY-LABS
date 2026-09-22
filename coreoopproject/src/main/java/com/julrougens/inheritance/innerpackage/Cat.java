@@ -4,4 +4,8 @@ public class Cat extends Animal {
     public void makeNoise() {
         System.out.println("Making noise");
     }
+
+    public void scratches() {
+        System.out.println("Scratches");
+    }
 }

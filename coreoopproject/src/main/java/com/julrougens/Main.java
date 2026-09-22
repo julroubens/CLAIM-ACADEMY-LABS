@@ -1,6 +1,8 @@
 package com.julrougens;
 
+import com.julrougens.inheritance.innerpackage.Animal;
 import com.julrougens.inheritance.innerpackage.Bird;
+import com.julrougens.inheritance.innerpackage.Cat;
 import com.julrougens.inheritance.innerpackage.Dog;
 import com.julrougens.inheritance.interfaces.Nest;
 
@@ -31,10 +33,16 @@ public class Main {
         Box<Boolean> booleanBox = new Box<>(true);
         System.out.println(booleanBox.getValue());
 
+        System.out.println("@@@@@@@@@@@@@@@ - implement Dog - @@@@@@@@@@@@");
         Dog dog = new Dog();
         dog.bark();
         dog.eat();
 
+        System.out.println("@@@@@@@@@@@@@@@ - implement Cat - @@@@@@@@@@@@");
+        Cat cat = new Cat();
+        cat.eat();
+        cat.scratches();
+        
         //Bird class
         System.out.println("@@@@@@@@@@@@@@@ - implement Bird - @@@@@@@@@@@@");
         Bird bird = new Bird();
@@ -50,6 +58,10 @@ public class Main {
         nest.removeBird();
 
         System.out.println(nest.hasBird());
+
+        bird.run();
+
+        bird.stop();
 
     }
 }
