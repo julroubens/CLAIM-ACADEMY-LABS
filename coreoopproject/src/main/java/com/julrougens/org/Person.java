@@ -1,4 +1,4 @@
-package com.julrougens;
+package com.julrougens.org;
 
 public record Person(String name, int age) {
     public Person{

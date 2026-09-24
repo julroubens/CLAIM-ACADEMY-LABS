@@ -16,6 +16,10 @@ public class Animal {
         System.out.println("Walking");
     }
 
+    public void makeSound(String name) {
+        System.out.println(name +" Making sound");
+    }
+
     public String getColor() {
         return color;
     }

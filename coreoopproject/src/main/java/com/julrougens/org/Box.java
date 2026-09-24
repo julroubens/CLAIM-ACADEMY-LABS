@@ -1,4 +1,4 @@
-package com.julrougens;
+package com.julrougens.org;
 
 public class Box<T> {
     private T value;

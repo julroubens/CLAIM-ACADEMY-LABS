@@ -1,4 +1,4 @@
-package com.julrougens;
+package com.julrougens.org;
 
 public record Rectangle(double width, double height) {
 
