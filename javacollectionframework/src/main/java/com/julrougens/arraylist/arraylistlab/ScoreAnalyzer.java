@@ -42,29 +42,50 @@ public class ScoreAnalyzer {
 
 //        Task 4
         System.out.println("\nTask 4: Find the highest and lowest scores");
-        if (!scores.isEmpty()) {
-            int max = scores.get(0);
+        int max = scores.get(0);
 
-            for (int i = 1; i < scores.size(); i++) {
-                if (scores.get(i) > max) {
-                    max = scores.get(i);
-                }
+        for (int i = 1; i < scores.size(); i++) {
+            if (scores.get(i) > max) {
+                max = scores.get(i);
             }
-            System.out.println("Highest score: " + max);
-
-            int min = scores.get(0);
-
-            for (int i = 1; i < scores.size(); i++) {
-                if (scores.get(i) < min) {
-                    min = scores.get(i);
-                }
-            }
-            System.out.println("Lowest score: " + min);
-        }else  {
-            System.out.println("Highest score: N/A");
-            System.out.println("Lowest score: N/A");
-
         }
+        System.out.println("Highest score: " + max);
+
+        int min = scores.get(0);
+
+        for (int i = 1; i < scores.size(); i++) {
+            if (scores.get(i) < min) {
+                min = scores.get(i);
+            }
+        }
+        System.out.println("Lowest score: " + min);
+
+
+//        //        Task 4
+//        System.out.println("\nTask 4: Find the highest and lowest scores");
+//        if (!scores.isEmpty()) {
+//            int max = scores.get(0);
+//
+//            for (int i = 1; i < scores.size(); i++) {
+//                if (scores.get(i) > max) {
+//                    max = scores.get(i);
+//                }
+//            }
+//            System.out.println("Highest score: " + max);
+//
+//            int min = scores.get(0);
+//
+//            for (int i = 1; i < scores.size(); i++) {
+//                if (scores.get(i) < min) {
+//                    min = scores.get(i);
+//                }
+//            }
+//            System.out.println("Lowest score: " + min);
+//        }else  {
+//            System.out.println("Highest score: N/A");
+//            System.out.println("Lowest score: N/A");
+//
+//        }
 
 
 //        Task 5
@@ -87,7 +108,8 @@ public class ScoreAnalyzer {
 
 //        Task 6
         System.out.println("\nTask 6: Search for a score");
-        boolean result = scores.contains(100) ? true : false;
+        boolean result = scores.contains(100);
+//        boolean result = scores.contains(100) ? true : false;
         System.out.println("Contains 100? " + result);
 
         int firstIndex = scores.indexOf(88);
@@ -120,8 +142,11 @@ public class ScoreAnalyzer {
             bonusScores.set(i, bonusScores.get(i) + 5);
         }
 
+        bonusScores.replaceAll(integer -> integer + 5);
+
         System.out.println("Bonus Scores: " + bonusScores);
         System.out.println("Original Scores: " + scores);
+
 
     }
 }

@@ -12,6 +12,8 @@ public class ArrayListDemo {
         names.add("Ben");
         names.add("Chloe");
 
+
+
         System.out.println(names.get(0));
         System.out.println(names.get(1));
         System.out.println(names.get(2));
@@ -19,7 +21,40 @@ public class ArrayListDemo {
 
         System.out.println("Size= " + names.size());
 
+        ArrayList<String> names2 = new ArrayList<>();
+        names2.add("Banana");
+        names2.add("Banana");
+        names2.add("Banana");
+        names2.add("Banana");
+        names2.add("Apple");
+
+        System.out.println("Original Names: " + names2);
+        names2.removeIf(name -> name.equalsIgnoreCase("banana"));
+
+        System.out.println("Original Names2: " + names2);
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(50);
+        int highest = numbers.get(0);
+        for (Integer number : numbers) {
+            if (highest < number) {
+                highest = number;
+            }
+        }
+        System.out.println(highest);
+
+        System.out.println(numbers);
+        if (numbers.isEmpty()){
+            System.out.println("Empty");
+        }
+        else {
+            System.out.println("Size: " + numbers.size());
+        }
 
     }
-
 }

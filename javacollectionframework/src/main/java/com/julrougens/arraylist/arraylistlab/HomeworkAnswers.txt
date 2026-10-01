@@ -1,0 +1,21 @@
+1. Why does the program use ArrayList<Integer> instead of ArrayList<int>?
+
+2. What is the difference between a list's size and its final valid index?
+
+3. What does indexOf() return when a value is absent?
+
+4. Why should the program check for an empty list before calling get(0)?
+
+5. Why can integer division produce the wrong average?
+
+6. Why does ArrayList<Integer> copy = scores; fail to create an independent list?
+
+7. How do add(index, value) and set(index, value) affect the list differently?
+
+8. Why should the two occurrences of 88 remain in the passing-score list?
+
+9. What is the difference between these statements?
+scores.remove(2);
+scores.remove(Integer.valueOf(2));
+
+10. Which loop did you use for the bonus calculation, and why was it suitable

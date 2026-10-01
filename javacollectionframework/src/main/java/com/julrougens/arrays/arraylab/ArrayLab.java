@@ -4,12 +4,11 @@ public class ArrayLab {
     static int[] scores = {83, 70, 90, 66};
 
     public static void main(String[] args) {
-
+        print();
     }
 
-    public int sum()
+    public static int sum()
     {
-
         int sum = 0;
         for (int score : scores)
         {
@@ -18,17 +17,17 @@ public class ArrayLab {
         return sum;
     }
 
-    public double average(int[] scores)
+    public static double average(int[] scores)
     {
         double average = 0;
         for (int score : scores)
         {
             average += score;
         }
-        return average / scores.length;
+        return (double) average / scores.length;
     }
 
-    public void print()
+    public static void print()
     {
         if (sum() == 0){
             System.out.println("No scores found");
