@@ -113,8 +113,6 @@ public class ArrayListLab {
                 }
             }
             System.out.println("Highest score: " + highest);
-
-
         }
 
     }

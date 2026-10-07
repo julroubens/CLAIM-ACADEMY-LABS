@@ -1,0 +1,1 @@
+- Which operation replaces an element, and why does the size stay unchanged?

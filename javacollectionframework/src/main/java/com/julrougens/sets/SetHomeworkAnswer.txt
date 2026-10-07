@@ -1,0 +1,7 @@
+A. Explain why adding an existing value differs from removing it and adding it again. Explain why the TreeSet display
+may differ from the LinkedHashSet display.
+
+
+B. For Shared and Java only, start with a copy of the Java set. For Web only, start with a copy of the Web set. The
+final original-set printouts must match the accepted lists above. Labels may vary, but membership, counts, and
+required order must match.
