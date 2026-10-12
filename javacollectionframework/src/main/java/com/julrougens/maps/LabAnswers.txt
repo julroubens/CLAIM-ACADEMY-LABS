@@ -1,0 +1,23 @@
+In LabAnswers.txt, answer: (a) Can two student IDs map to the same name? (b) Does updating one existing
+ID increase size? (c) What does get return for an absent key? Check your predictions after the first run.
+    a. Yes. Two different student IDs can map to the same name.
+    b. No. Updating an existing ID does not increase the size; it replaces the old value.
+    c. get() returns null when the key does not exist.
+
+
+In LabAnswers.txt, explain why updating B207 did not add a new mapping and why Ava was allowed under
+two keys. Explain why HashMap line order is not part of the expected result.
+    . Updating B207 did not add a new mapping because a Map cannot have duplicate keys. When you use put() with a key that already exists,
+        Java replaces the old value for that key instead of creating another entry.
+    . Ava was allowed under two keys because map values do not have to be unique. Different student IDs can both point to the same name.
+    . HashMap does not guarantee the order of its entries, so the order in which lines print can vary. The important result is the correct key-value
+        pairs, not the order they appear in.
+
+
+In LabAnswers.txt: (a) Trace the old and new count on the third input, SQL. (b) Explain why map size is 4
+while the sum is 7. (c) Explain why put(topic, 1) inside every loop iteration would be incorrect.
+    a. On the third input, SQL already has a count of 1. getOrDefault("SQL", 0) returns 1, then the program stores the new count 2.
+    b. The map size is 4 because there are only four distinct topics: SQL, Java, HTML, and CSS. The sum is 7 because all seven requests are counted,
+     including repeated topics.
+    c. Using put(topic, 1) on every iteration would reset the topic's count to 1 each time it appears. Repeated topics such as SQL would never
+        increase to 2 or 3.
