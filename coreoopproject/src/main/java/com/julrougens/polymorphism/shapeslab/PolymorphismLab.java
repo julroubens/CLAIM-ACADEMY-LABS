@@ -7,11 +7,16 @@ interface Shape {
 
 public class PolymorphismLab {
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(4,6);
-        System.out.println("Rectangle area: " + rectangle.area());
+//        Rectangle rectangle = new Rectangle(4,6);
+//        System.out.println("Rectangle area: " + rectangle.area());
+//
+//        Circle circle = new Circle(5);
+//        System.out.println("Circle area: " + circle.area());
 
-        Circle circle = new Circle(5);
-        System.out.println("Circle area: " + circle.area());
+        Shape[] shapes = {new Rectangle(4,5), new Circle(6)};
+        for (Shape shape : shapes) {
+            System.out.println(shape.area());
+        }
     }
 
 }
